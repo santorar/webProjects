@@ -1,0 +1,78 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.wave{
+    width: 100vw;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: space-around;
+    background-color: #0099ff;
+    color: #eee;
+    padding: 2% 0;
+}
+.tiempos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.tiempos>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    margin: 0 5%;
+}
+.process-time, .proceso-procesador, .cuantum-time{
+    padding: 20px 20px;
+    width: 2rem;
+    border: 2px solid #eee;
+    box-shadow: 1px 1px 1px 1px #999;
+    font-size: 2rem;
+    font-weight: bold;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    height: 80px;
+}
+.process{
+    padding: 20px 20px;
+    width: 2rem;
+    border: 2px solid #eee;
+    box-shadow: 1px 1px 1px 1px #999;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.buttons{
+    display: flex;
+    width: 100vw;
+    background-color: #0099ff;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 5%;
+}
+.button{
+    border: none;
+    padding: 10px;
+    background-color: #016FB9;
+    color: white;
+    box-shadow: 2px 3px 2px 1px #004f80;
+}
+.button:hover{
+    background-color: #0086df;
+}
+.cola-text, .process-text, .procesador-text, .cuantum-text{
+    font-size: 1.5rem;
+    font-weight: bold;
+}

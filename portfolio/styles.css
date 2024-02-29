@@ -1,0 +1,315 @@
+:root {
+  --primary-color: #a80242;
+  --shadow-primary-color: #72012c;
+  --dark-color: #2e2e2e;
+  --var-color: #421d24;
+  --light-color: #fdedd7;
+  --segundary-color: #305168;
+  --dark-secundary-color: #253d50;
+  --suplementary-color: #f8a4a3;
+  --title-color: rgb(59, 4, 121);
+  --code-color: rgb(30, 227, 241);
+  --contact-color: #393a42;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+/* navbar section  */
+
+#navbar {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  min-height: 3.125rem;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  top: 0;
+  left: 0;
+}
+#navbar ul {
+  list-style: none;
+  display: flex;
+  width: 15rem;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+.nav-link {
+  color: var(--light-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+  text-shadow: 2px 2px 3px var(--shadow-primary-color);
+}
+.nav-link:hover {
+  color: var(--suplementary-color);
+}
+#navbar h2 {
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  text-shadow: 2px 2px 3px var(--shadow-primary-color);
+}
+
+/* welcome section */
+
+#welcome-section {
+  background: linear-gradient(
+    -225deg,
+    rgb(80, 80, 80),
+    var(--dark-color) 30%,
+    var(--dark-color) 70%,
+    rgb(80, 80, 80)
+  );
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+.greeting {
+  font-family: "Lobster", cursive;
+  font-size: 6rem;
+  font-weight: lighter;
+}
+.greetings-subtitle {
+  font-size: 1.5rem;
+  font-family: "Merienda", cursive;
+  color: var(--primary-color);
+}
+
+/* projects section */
+
+#projects {
+  background-color: var(--segundary-color);
+  text-align: center;
+  color: var(--light-color);
+  padding-bottom: 3rem;
+}
+#projects h2 {
+  font-size: 2.8rem;
+  padding: 3rem 0 1rem;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 3rem 1.5rem;
+  justify-content: center;
+  align-content: center;
+  margin: 2rem 0;
+}
+.project-tile {
+  width: 30vw;
+  height: 75vh;
+  background-color: var(--title-color);
+  box-shadow: 2px 2px 6px -1px var(--dark-secundary-color);
+}
+.project-title {
+  font-size: 1.3rem;
+  padding: 10px 0;
+}
+.project-tile a {
+  color: var(--light-color);
+  text-decoration: none;
+}
+.project-img {
+  width: 100%;
+  height: calc(100% - 3.2rem);
+  object-fit: cover;
+}
+.code {
+  color: var(--title-color);
+  font-weight: bold;
+  transition: color 0.3s ease-out;
+}
+.project-tile:hover .code {
+  color: var(--code-color);
+}
+.see-more{
+    background-color: var(--title-color);
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    padding: 10px 20px;
+    color:var(--light-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s background-color ease-in;
+}
+.see-more i{
+    padding-left: 2px;
+    transition: 0.5s transform ease-in;
+}
+.see-more:hover{
+    background-color: var(--primary-color);
+}
+.see-more:hover i{
+    transform: translateX(7px);
+}
+
+/* contact section */
+
+#contact{
+    background-color: var(--contact-color);
+    color: whitesmoke;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Merienda', cursive;
+    text-align: center;
+}
+.title{
+    font-size: 4rem;
+    text-shadow: 1px 1px 2px black;
+}
+.subtitle{
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-top: -0.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px black;
+}
+.social-media{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.social-media ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 1rem 0;
+    width: 95%;
+    max-width: 1000px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-family: 'Rubik', sans-serif;
+    flex-wrap: wrap;
+}
+.social-page{
+    color: whitesmoke;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px black;
+    padding: 0 1rem;
+}
+.social-page i{
+    font-size: 2rem;
+    padding-right: 3px;
+}
+.social-media ul li{
+    transition: 0.2s transform ease-out;
+}
+.social-media ul li:hover{
+    transform: translateY(8px);
+}
+.social-page:hover{
+    color: rgb(199, 199, 199)
+}
+
+/* footer section */
+
+.foot{
+    height:20vh;
+    border-top: 4px solid var(--primary-color);
+    background-color: var(--contact-color);
+    display: flex;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+@media only screen and (max-width: 1090px){
+  .project-grid{
+    grid-template-columns: repeat(2,auto);
+  }
+  .project-tile{
+    width: 45vw;
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 729px){
+  .project-grid{
+    grid-template-columns: auto;
+  }
+  .project-tile{
+    width: 90vw;
+    height: auto;
+  }
+  .greeting{
+    font-size: 4rem;
+  }
+  .greetings-subtitle{
+    font-size: 1.5rem;
+  }
+  .foot{
+    padding: 0 2rem;
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 460px){
+  .greeting{
+    font-size: 2.5rem;
+  }
+  .greetings-subtitle{
+    font-size: 1rem;
+  }
+  .title{
+    font-size: 2.5rem;
+  }
+  .subtitle{
+    font-size: 1rem;
+  }
+  .social-page{
+    font-size: 1.1rem;
+  }
+  .social-page i{
+    font-size: 1.5rem;
+  }
+  .foot{
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1rem;
+    height: auto;
+    font-size: 1rem;
+  }
+  .created{
+    padding-top: 2rem;
+  }
+}
+@media only screen and (max-width: 420px){
+  #navbar{
+    flex-direction: column;
+    justify-content: center;
+    height: 4.375rem;
+  }
+  #navbar ul{
+    padding: 0;
+  }
+  #navbar h2{
+    padding:0;
+    margin-bottom: 0.5rem;
+  }
+}

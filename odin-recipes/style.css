@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f0f0ff;
+}
+h1{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+hr{
+    border-top: 10px dotted lightgray;
+    width: 20%;
+    margin: 40px auto;
+}
+ul,ol{
+    text-align: left;
+    max-width: 50%;
+    margin: 20px auto;
+}
+li{
+    margin-bottom: 20px;
+    line-height: 2;
+}
+a{
+    color: black;
+    text-decoration: none;
+
+}
+a:hover{
+    color:lightblue;
+}
+img{
+    width: 400px;
+    height: auto;
+    border: 1px solid;
+    border-radius: 5%;
+    box-shadow: 2px 2px 6px gray;
+}
+h2{
+    margin-bottom: 60px;
+    font-size: 2rem;
+}

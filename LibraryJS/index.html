@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" integrity="<KEY>" crossorigin="anonymous">
+    <link rel="stylesheet" href="normalize.css" integrity="<KEY>" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="title">Library</h1>
+        <button id="add-book">Add Book</button>
+    </nav>
+    <main class="books">
+    </main>
+    <footer class="foot">
+        <p>
+            Created by  <span>Santorar</span>
+        </p>
+    </footer>
+    <dialog id="add-book-dialog">
+        <form id="add-book-form" method="dialog">
+            <legend class="add-book-legend">Add a Book</legend>
+            <div class="form-group">
+                <label for="book-title-form" class="add-form-label">Book Title</label>
+                <input type="text" name="title" id="book-title-form">
+            </div>
+            <div class="form-group">
+                <label for="book-author-form" class="add-form-label">Book Author</label>
+                <input type="text" name="author" id="book-author-form">
+            </div>
+            <div class="form-group">
+                <label for="book-pages-form" class="add-form-label">Book Pages</label>
+                <input type="number" name="pages" id="book-pages-form">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="readed" id="book-readed-form">
+                <label for="book-readed-form">Read</label>
+            </div>
+            <div class="form-buttons">
+                <button type="submit" id="confirm-book-dialog">Add</button>
+                <button value="cancel" formmethod="dialog" id="add-book-cancel">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>

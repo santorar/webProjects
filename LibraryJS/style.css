@@ -1,0 +1,128 @@
+/* General Styling */
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+/* NavBar Styling */
+.navbar {
+  width: 94%;
+  height: 10vh;
+  min-height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 3%;
+  box-shadow: 10px 5px 5px #ddd;
+  z-index: 10;
+}
+#add-book {
+  padding: 10px 15px;
+  border: none;
+  font-weight: bold;
+  background-color: #eee;
+  border-radius: 5px;
+}
+/* Books container Style */
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #eee;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 85vh;
+  gap: 25px;
+  padding: 1%;
+}
+/* Individual Book Style */
+.book {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 292px;
+  min-height: 330px;
+  max-height: 360px;
+  justify-content: space-between;
+  padding: 30px 30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #ddd;
+}
+.book-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.b-read, .b-delete, .b-not-read {
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s ease-out;
+}
+.b-read:hover {
+  background-color: #38c870;
+  transform: scale(1.1);
+  color: white;
+}
+.not:hover {
+  background-color: #ff2c32;
+  transform: scale(1.1);
+  color: white;
+}
+.b-delete:hover {
+  background-color: #ff2c32;
+  transform: scale(1.1);
+  color: white;
+}
+/* Footer Style */
+.foot {
+  width: 100%;
+  height: 5vh;
+  min-height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 70%;
+  box-shadow: 4px -8px 5px #ddd;
+  z-index: 10;
+}
+.foot span {
+  font-style: italic;
+}
+/* Modal Add Book style */
+#add-book-dialog {
+  overflow: auto;
+  background: none;
+  border: none;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out,
+    overlay 0.2s ease-out allow-discrete, display 0.2s ease-out allow-discrete;
+}
+::backdrop{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+#add-book-dialog[open] {
+  opacity: 1;
+  transform: scale(1);
+}
+@starting-style {
+  #add-book-dialog[open] {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+#add-book-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}

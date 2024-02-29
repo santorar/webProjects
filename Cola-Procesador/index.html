@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cola procesador</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <img src="assets/Up.svg" alt="wave" class="wave">
+        <main class="container">
+            <div class="container-cola">
+                <p class="cola-text">Cola Pendientes</p>
+                <ul class="cola-preparados">
+                </ul>
+            </div>
+            <div class="tiempos">
+                <div class="current-process">
+                    <p class="process-text">Proceso Actual</p>
+                    <p class="process-time">0</p>
+                </div>
+                <div class="procesador">
+                    <p class="procesador-text">Procesador</p>
+                    <p class="proceso-procesador">P</p>
+                </div>
+                <div class="current-cuantum">
+                    <p class="cuantum-text">Tiempo restante cuantum</p>
+                    <p class="cuantum-time"></p>
+                </div>
+            </div>
+            <div class="container-cola">
+                <p class="cola-text">Cola Terminados</p>
+                <ul class="cola-procesados">
+                </ul>
+            </div>
+        </main>
+        <div class="buttons">
+            <button class="reset button">Reiniciar</button>
+            <button class="cuantum-change button">Cambiar Cuantum</button>
+            <button class="add button">Añadir Proceso</button>
+            <button class="start button">Empezar</button>
+        </div>
+        <img src="assets/low.svg" alt="wave" class="wave">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
